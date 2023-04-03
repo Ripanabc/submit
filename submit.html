@@ -1,9 +1,31 @@
 <html>
+<head>
+<style>
+.wrapper{
+width:400px;
+max-width:90%;
+margin:0 auto;
+}
+.wrapper label{
+display:block;
+margin:0.5em 0;
+}
+.wrapper label input{
+font-size:18px;
+padding:0.5em;
+</style>
 <body>
+<h1>Form Data</h1>
 <div class="wrapper">
-name<input type="Text" name="name" size="15"><br><br>
-email<input type="Text" name="email" size="15"><br><br>
+<form class="form">
+<label id="nameField">
+<input type="Text" name="nameField" placeholder="name" required/>
+</label>
+<label id="emailField">
+<input type="email" name="emailField" placeholder="email" required />
+</label>
 <input type="submit" value="submit" name="submit">
+</form>
 </div>
 <script>
 const wrapper=document.querySelector('.wrapper'),
